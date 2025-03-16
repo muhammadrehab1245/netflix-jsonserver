@@ -8,9 +8,9 @@ const tvshows = jsonServer.router("tvshows.json");
 
 server.use(middlewares);
 
-// Custom routes for different JSON files
-server.use(data);
-server.use(tvshows);
+// Custom route prefixes
+server.use("/api/moviesdata", data);
+server.use("/api/tv", tvshows);
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
