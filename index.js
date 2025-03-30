@@ -9,10 +9,10 @@ const tvshows = jsonServer.router("tvshows.json");
 server.use(middlewares);
 
 // Custom route prefixes
-server.use("/api/moviesdata", data);
-server.use("/api/tv", tvshows);
+server.use("/moviesdata", data);
+server.use("/tv", tvshows);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 server.listen(PORT, () => {
-    console.log(`JSON Server is running on port ${PORT}`);
+  console.log(`JSON Server is running on port ${PORT}`);
 });
