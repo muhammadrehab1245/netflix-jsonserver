@@ -7,8 +7,8 @@ const data = jsonServer.router("data.json");
 const tvshows = jsonServer.router("tvshows.json");
 
 server.use(middlewares);
-server.use("/moviesdata", data);
-server.use("/tv", tvshows);
+server.use(data);
+// server.use("/tv", tvshows);
 
 module.exports = (req, res) => {
   server(req, res); // No listen here, Vercel handles it

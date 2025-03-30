@@ -1,9 +1,7 @@
 {
   "functions": {
     "api/server.js": {
-      "includeFiles": "tvshows.json"
-    },
-    "api/server.js#1": {
+      "memory": 1024,
       "includeFiles": "data.json"
     }
   },
